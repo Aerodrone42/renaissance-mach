@@ -1,4 +1,3 @@
-
 import { LocalitiesData, LocalityImages } from "@/types/locality";
 
 export const localitiesData: LocalitiesData = {
@@ -150,8 +149,6 @@ export const localityImages: LocalityImages = {
     { src: "/lovable-uploads/0e7083ee-ce9e-418e-930e-d5f63bbfcb20.png", alt: "Place centrale" },
     { src: "/lovable-uploads/57cfeb3f-a073-4017-a068-63c353479ff4.png", alt: "Paysage environnant" },
     { src: "/lovable-uploads/7c44b874-7e0a-4164-85dd-f679841fb8a6.png", alt: "Le bar du Renaissance" },
-    { src: "/lovable-uploads/f436c816-c0f5-42bc-ba69-13ba98b6d4c0.png", alt: "Notre chocolat chaud maison" },
-    { src: "/lovable-uploads/d12f7916-1296-4b7d-ad30-1507394f38c5.png", alt: "Intérieur du bar avec comptoir" },
-    { src: "/lovable-uploads/f2b0634a-64c3-43aa-a654-01604d497942.png", alt: "Chocolat chaud avec chantilly" }
+    { src: "/lovable-uploads/f436c816-c0f5-42bc-ba69-13ba98b6d4c0.png", alt: "Notre chocolat chaud maison" }
   ]
 };
