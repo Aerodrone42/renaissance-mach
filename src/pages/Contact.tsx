@@ -1,6 +1,5 @@
-
 import { useState } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { toast } from 'sonner';
 import Layout from '@/components/layout/Layout';
 import PageHeader from '@/components/common/PageHeader';
@@ -51,11 +50,6 @@ const Contact = () => {
         <title>Contact | Le Renaissance - Machézal</title>
         <meta name="description" content="Contactez Le Renaissance à Machézal. Trouvez nos coordonnées, horaires d'ouverture et formulaire de contact." />
       </Helmet>
-      
-      <PageHeader 
-        title="Contactez-nous" 
-        description="Nous sommes à votre écoute"
-      />
       
       <div className="renaissance-container py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

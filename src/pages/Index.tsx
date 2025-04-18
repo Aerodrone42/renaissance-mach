@@ -1,6 +1,6 @@
 
 import { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import { toast } from 'sonner';
 import Layout from '@/components/layout/Layout';
 import Hero from '@/components/home/Hero';
@@ -14,6 +14,7 @@ const Index = () => {
     toast.success('Bienvenue au Renaissance!', {
       description: 'Découvrez notre bar, restaurant et épicerie au cœur de Machézal.',
       position: 'top-center',
+      duration: 5000,
     });
   }, []);
 
