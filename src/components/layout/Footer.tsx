@@ -49,18 +49,29 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <h4 className="font-playfair text-xl font-bold mb-4 text-renaissance-secondary">Informations pratiques</h4>
             <div className="space-y-3">
-              <div className="flex items-center justify-center md:justify-start gap-2">
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=Le+Renaissance+120+All.+des+Platanes+42114+Machézal" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center md:justify-start gap-2 hover:text-renaissance-secondary transition-colors"
+              >
                 <MapPin size={18} className="text-renaissance-secondary" />
                 <span className="text-gray-300">120 All. des Platanes, 42114 Machézal</span>
-              </div>
-              <div className="flex items-center justify-center md:justify-start gap-2">
+              </a>
+              <a 
+                href="tel:0477626098" 
+                className="flex items-center justify-center md:justify-start gap-2 hover:text-renaissance-secondary transition-colors"
+              >
                 <Phone size={18} className="text-renaissance-secondary" />
                 <span className="text-gray-300">04 77 62 60 98</span>
-              </div>
-              <div className="flex items-center justify-center md:justify-start gap-2">
+              </a>
+              <a 
+                href="mailto:contact@lerenaissance.fr"
+                className="flex items-center justify-center md:justify-start gap-2 hover:text-renaissance-secondary transition-colors"
+              >
                 <Mail size={18} className="text-renaissance-secondary" />
                 <span className="text-gray-300">contact@lerenaissance.fr</span>
-              </div>
+              </a>
               <OpeningHours />
             </div>
           </div>
