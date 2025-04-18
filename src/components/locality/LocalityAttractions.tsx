@@ -6,7 +6,7 @@ interface LocalityAttractionsProps {
 export default function LocalityAttractions({ attractions }: LocalityAttractionsProps) {
   return (
     <div className="mb-12">
-      <h2 className="font-playfair text-2xl font-bold mb-4 text-renaissance-primary">Pourquoi nous visiter</h2>
+      <h2 className="font-playfair text-2xl font-bold mb-4 text-renaissance-primary">Pourquoi visiter notre bar-restaurant-épicerie</h2>
       <ul className="space-y-4">
         {attractions.map((attraction, index) => (
           <li key={index} className="flex items-start">

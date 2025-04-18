@@ -10,9 +10,9 @@ interface LocalityCallToActionProps {
 export default function LocalityCallToAction({ localityName, distance }: LocalityCallToActionProps) {
   return (
     <div className="p-6 border border-renaissance-secondary/40 rounded-lg bg-renaissance-secondary/10">
-      <h3 className="font-playfair text-xl font-bold mb-4 text-renaissance-primary">Venez au Renaissance depuis {localityName}</h3>
+      <h3 className="font-playfair text-xl font-bold mb-4 text-renaissance-primary">Venez au bar-restaurant-épicerie Le Renaissance depuis {localityName}</h3>
       <p className="mb-4">
-        Le Renaissance vous accueille pour une expérience gourmande inoubliable à seulement {distance} de {localityName}.
+        Le bar-restaurant-épicerie Le Renaissance vous accueille pour une expérience gourmande inoubliable à seulement {distance} de {localityName}.
         Notre établissement est facile d'accès et dispose d'un parking à proximité.
       </p>
       
