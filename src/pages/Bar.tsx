@@ -96,18 +96,6 @@ const Bar = () => {
           </div>
         </div>
       </div>
-      
-      {/* New footer credit */}
-      <div className="text-center text-sm text-gray-500 mt-8 pb-4">
-        Créé par <a 
-          href="https://www.site-internet-sans-abonnement.fr/" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="underline hover:text-renaissance-primary transition-colors"
-        >
-          Aerodrone Multiservice
-        </a>
-      </div>
     </Layout>
   );
 };
