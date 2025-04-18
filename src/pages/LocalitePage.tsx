@@ -156,7 +156,9 @@ const localityImages = {
   default: [
     { src: "/lovable-uploads/e2cd6eb9-afd4-46b6-a981-507795eca30d.png", alt: "Vue du village" },
     { src: "/lovable-uploads/0e7083ee-ce9e-418e-930e-d5f63bbfcb20.png", alt: "Place centrale" },
-    { src: "/lovable-uploads/57cfeb3f-a073-4017-a068-63c353479ff4.png", alt: "Paysage environnant" }
+    { src: "/lovable-uploads/57cfeb3f-a073-4017-a068-63c353479ff4.png", alt: "Paysage environnant" },
+    { src: "/lovable-uploads/7c44b874-7e0a-4164-85dd-f679841fb8a6.png", alt: "Le bar du Renaissance" },
+    { src: "/lovable-uploads/f436c816-c0f5-42bc-ba69-13ba98b6d4c0.png", alt: "Notre chocolat chaud maison" }
   ]
 };
 
