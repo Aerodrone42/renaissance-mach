@@ -1,4 +1,3 @@
-
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -21,6 +20,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <HelmetProvider>
       <Helmet>
+        <link rel="icon" href="/lovable-uploads/15e6e565-d044-4ad3-a606-903c429297fc.png" />
         <link rel="icon" href="/lovable-uploads/1e87f1be-8ed9-42a4-844d-d0991d75e48e.png" />
         <meta name="theme-color" content="#C1432A" />
       </Helmet>
