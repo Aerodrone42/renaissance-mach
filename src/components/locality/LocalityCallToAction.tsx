@@ -28,7 +28,7 @@ export default function LocalityCallToAction({ localityName, distance }: Localit
           <Phone size={20} className="mr-2 text-renaissance-primary mt-1" />
           <div>
             <p className="font-medium">Réservations</p>
-            <p className="text-renaissance-dark/70">04 77 62 XX XX</p>
+            <a href="tel:0477626098" className="text-renaissance-dark/70 hover:text-renaissance-primary transition-colors">04 77 62 60 98</a>
           </div>
         </div>
       </div>
