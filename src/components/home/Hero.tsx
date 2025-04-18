@@ -1,26 +1,8 @@
 
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useState, useEffect } from 'react';
 
 export default function Hero() {
-  const [backgroundImage, setBackgroundImage] = useState('/lovable-uploads/51463798-08e2-4c5a-93db-fe7c4497b1fa.png');
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.onload = () => {
-      console.log('Image loaded successfully');
-      setImageLoaded(true);
-    };
-    img.onerror = (error) => {
-      console.error('Image failed to load:', error);
-      // Use a fallback color if image fails
-      setImageLoaded(false);
-    };
-    img.src = backgroundImage;
-  }, [backgroundImage]);
-
   const scrollToSection = () => {
     const section = document.getElementById('about-section');
     if (section) {
@@ -30,16 +12,10 @@ export default function Hero() {
 
   return (
     <div className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background with fallback color */}
-      <div 
-        className="absolute inset-0 bg-renaissance-dark z-0"
-        style={{ 
-          backgroundImage: imageLoaded ? `url(${backgroundImage})` : 'none',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
-        <div className="absolute inset-0 bg-renaissance-dark/70"></div>
+      {/* Solid background color instead of problematic image */}
+      <div className="absolute inset-0 bg-renaissance-dark z-0">
+        {/* Dark overlay for better text visibility */}
+        <div className="absolute inset-0 bg-black/70"></div>
       </div>
 
       {/* Content */}
