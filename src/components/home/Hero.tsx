@@ -16,7 +16,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
         style={{ 
-          backgroundImage: "url('/lovable-uploads/5c2395f4-af41-4598-8940-efb58f030062.png')",
+          backgroundImage: "url('/lovable-uploads/fb1374ad-4300-482f-b0df-4dfb8e0b4e73.png')",
         }}
       >
         <div className="absolute inset-0 bg-renaissance-dark/70"></div>
