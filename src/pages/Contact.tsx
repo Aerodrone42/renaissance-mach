@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { toast } from 'sonner';
@@ -127,7 +126,16 @@ const Contact = () => {
               Une question, une remarque ou une réservation? Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais.
             </p>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form 
+              action="https://formsubmit.co/contact@le-renaissance-machezal.fr" 
+              method="POST"
+              className="space-y-6"
+            >
+              {/* Champs cachés pour FormSubmit */}
+              <input type="hidden" name="_next" value="https://www.le-renaissance-machezal.fr/merci" />
+              <input type="hidden" name="_subject" value="Nouveau message du site Le Renaissance" />
+              <input type="text" name="_honey" style={{ display: 'none' }} />
+              
               <div className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium mb-1">
@@ -136,8 +144,6 @@ const Contact = () => {
                   <Input
                     id="name"
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
                     required
                     className="w-full"
                     placeholder="Votre nom"
@@ -152,8 +158,6 @@ const Contact = () => {
                     id="email"
                     name="email"
                     type="email"
-                    value={formData.email}
-                    onChange={handleChange}
                     required
                     className="w-full"
                     placeholder="votre@email.com"
@@ -167,8 +171,6 @@ const Contact = () => {
                   <Input
                     id="subject"
                     name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
                     required
                     className="w-full"
                     placeholder="Le sujet de votre message"
@@ -182,8 +184,6 @@ const Contact = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     required
                     className="w-full min-h-[150px]"
                     placeholder="Votre message..."
@@ -194,9 +194,8 @@ const Contact = () => {
               <Button 
                 type="submit" 
                 className="bg-renaissance-primary hover:bg-renaissance-accent text-white w-full"
-                disabled={isSubmitting}
               >
-                {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
+                Envoyer le message
               </Button>
             </form>
           </div>
