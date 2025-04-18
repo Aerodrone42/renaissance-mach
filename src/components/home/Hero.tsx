@@ -1,8 +1,22 @@
 
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
+  const [backgroundImage, setBackgroundImage] = useState('/lovable-uploads/fb1374ad-4300-482f-b0df-4dfb8e0b4e73.png');
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      console.log('Image loaded successfully');
+    };
+    img.onerror = (error) => {
+      console.error('Image failed to load:', error);
+    };
+    img.src = backgroundImage;
+  }, [backgroundImage]);
+
   const scrollToSection = () => {
     const section = document.getElementById('about-section');
     if (section) {
@@ -16,7 +30,9 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
         style={{ 
-          backgroundImage: "url('/lovable-uploads/fb1374ad-4300-482f-b0df-4dfb8e0b4e73.png')",
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
         }}
       >
         <div className="absolute inset-0 bg-renaissance-dark/70"></div>
@@ -50,4 +66,3 @@ export default function Hero() {
     </div>
   );
 }
-
