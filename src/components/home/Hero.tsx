@@ -14,7 +14,7 @@ export default function Hero() {
     <div className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background with new uploaded image */}
       <div 
-        className="absolute inset-0 z-0 bg-renaissance-dark"
+        className="absolute inset-0 z-0 bg-renaissance-dark animate-fade-in"
         style={{
           backgroundImage: "url('/lovable-uploads/0e79e142-4ca6-4303-81ce-5e3a7bf72a47.png')",
           backgroundSize: "cover",
@@ -43,7 +43,7 @@ export default function Hero() {
         </p>
         
         <Button 
-          className="bg-renaissance-primary hover:bg-renaissance-accent text-white animate-slide-in"
+          className="bg-renaissance-primary hover:bg-renaissance-accent text-white animate-slide-in transition-colors duration-300"
           style={{ animationDelay: "0.6s" }}
           onClick={scrollToSection}
         >

@@ -28,7 +28,7 @@ export default function Services() {
   return (
     <section className="py-16 md:py-24 bg-white">
       <div className="renaissance-container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in">
           <h2 className="section-title inline-block mx-auto">Nos services</h2>
           <p className="max-w-3xl mx-auto text-renaissance-dark/80 mt-6">
             Découvrez les différentes facettes du Renaissance, un lieu multiservice qui s'adapte à vos besoins.
@@ -38,7 +38,11 @@ export default function Services() {
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="group">
+            <div 
+              key={index} 
+              className="group animate-fade-in hover:scale-105 transition-transform duration-300"
+              style={{ animationDelay: `${index * 0.2}s` }}
+            >
               <div className="overflow-hidden rounded-lg mb-4 h-64 relative">
                 <img 
                   src={service.image} 
@@ -53,9 +57,9 @@ export default function Services() {
               <p className="text-renaissance-dark/80 mb-4">
                 {service.description}
               </p>
-              <Button variant="link" asChild className="text-renaissance-primary hover:text-renaissance-accent px-0">
+              <Button variant="link" asChild className="text-renaissance-primary hover:text-renaissance-accent px-0 transition-colors duration-300">
                 <Link to={service.link}>
-                  En savoir plus <ChevronRight className="ml-1 h-4 w-4" />
+                  En savoir plus <ChevronRight className="ml-1 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
               </Button>
             </div>
