@@ -10,6 +10,10 @@ import Contact from '@/components/home/Contact';
 
 const Index = () => {
   useEffect(() => {
+    // Preload hero background image
+    const preloadImage = new Image();
+    preloadImage.src = '/lovable-uploads/51463798-08e2-4c5a-93db-fe7c4497b1fa.png';
+    
     // Show welcome toast when component mounts
     toast.success('Bienvenue au Renaissance!', {
       description: 'Découvrez notre bar, restaurant et épicerie au cœur de Machézal.',

@@ -4,15 +4,19 @@ import { Button } from '@/components/ui/button';
 import { useState, useEffect } from 'react';
 
 export default function Hero() {
-  const [backgroundImage, setBackgroundImage] = useState('/lovable-uploads/fb1374ad-4300-482f-b0df-4dfb8e0b4e73.png');
+  const [backgroundImage, setBackgroundImage] = useState('/lovable-uploads/51463798-08e2-4c5a-93db-fe7c4497b1fa.png');
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const img = new Image();
     img.onload = () => {
       console.log('Image loaded successfully');
+      setImageLoaded(true);
     };
     img.onerror = (error) => {
       console.error('Image failed to load:', error);
+      // Use a fallback color if image fails
+      setImageLoaded(false);
     };
     img.src = backgroundImage;
   }, [backgroundImage]);
@@ -26,11 +30,11 @@ export default function Hero() {
 
   return (
     <div className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background with fallback color */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
+        className="absolute inset-0 bg-renaissance-dark z-0"
         style={{ 
-          backgroundImage: `url(${backgroundImage})`,
+          backgroundImage: imageLoaded ? `url(${backgroundImage})` : 'none',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
