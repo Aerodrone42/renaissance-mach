@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Layout from '@/components/layout/Layout';
 import PageHeader from '@/components/common/PageHeader';
+import LocalityGallery from '@/components/locality/LocalityGallery';
 import { MapPin, ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -150,6 +151,15 @@ const localitiesData = {
   }
 };
 
+// Images mock data for each locality
+const localityImages = {
+  default: [
+    { src: "/lovable-uploads/e2cd6eb9-afd4-46b6-a981-507795eca30d.png", alt: "Vue du village" },
+    { src: "/lovable-uploads/0e7083ee-ce9e-418e-930e-d5f63bbfcb20.png", alt: "Place centrale" },
+    { src: "/lovable-uploads/57cfeb3f-a073-4017-a068-63c353479ff4.png", alt: "Paysage environnant" }
+  ]
+};
+
 type LocalityParams = {
   slug: string;
 };
@@ -181,7 +191,7 @@ const LocalitePage = () => {
         description={`À ${locality.distance} de Machézal`}
       />
       
-      <div className="renaissance-container py-16">
+      <div className="renaissance-container py-16 animate-fade-in">
         <div className="max-w-4xl mx-auto">
           <Button 
             variant="ghost" 
@@ -199,6 +209,8 @@ const LocalitePage = () => {
             
             <p className="text-lg text-renaissance-dark/80 mb-8">{locality.description}</p>
           </div>
+
+          <LocalityGallery images={localityImages.default} />
           
           <div className="mb-12">
             <h2 className="font-playfair text-2xl font-bold mb-4 text-renaissance-primary">Points d'intérêt</h2>
