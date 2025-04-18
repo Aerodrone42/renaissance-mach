@@ -12,10 +12,17 @@ export default function Hero() {
 
   return (
     <div className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Solid background color instead of problematic image */}
-      <div className="absolute inset-0 bg-renaissance-dark z-0">
+      {/* Background with new uploaded image */}
+      <div 
+        className="absolute inset-0 z-0 bg-renaissance-dark"
+        style={{
+          backgroundImage: "url('/lovable-uploads/0e79e142-4ca6-4303-81ce-5e3a7bf72a47.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center"
+        }}
+      >
         {/* Dark overlay for better text visibility */}
-        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
       </div>
 
       {/* Content */}
