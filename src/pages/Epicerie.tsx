@@ -7,9 +7,13 @@ import ServiceHours from '@/components/common/ServiceHours';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const epicerieHours = [
-  { days: "Mardi - Samedi", hours: "08h00 - 19h30" },
-  { days: "Dimanche", hours: "08h00 - 12h30" },
-  { days: "Lundi", hours: "Fermé" }
+  { days: "Lundi", hours: "17h00 - 20h00" },
+  { days: "Mardi", hours: "09h00 - 13h30 & 17h00 - 20h00" },
+  { days: "Mercredi", hours: "Fermé" },
+  { days: "Jeudi", hours: "09h00 - 13h30 & 17h00 - 22h00" },
+  { days: "Vendredi", hours: "09h00 - 13h30 & 17h00 - 22h00" },
+  { days: "Samedi", hours: "10h00 - 13h30 & 17h00 - 22h00" },
+  { days: "Dimanche", hours: "09h00 - 14h00" }
 ];
 
 const Epicerie = () => {
