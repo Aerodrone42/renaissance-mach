@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Phone, Clock, MapPin, Mail, Facebook, Instagram } from 'lucide-react';
 import OpeningHours from '../common/OpeningHours';
@@ -50,13 +49,13 @@ export default function Footer() {
             <h4 className="font-playfair text-xl font-bold mb-4 text-renaissance-secondary">Informations pratiques</h4>
             <div className="space-y-3">
               <a 
-                href="https://www.google.com/maps/search/?api=1&query=Le+Renaissance+120+All.+des+Platanes+42114+Machézal" 
+                href="https://www.google.com/maps/search/?api=1&query=Le+Bourg+42114+Machézal" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center justify-center md:justify-start gap-2 hover:text-renaissance-secondary transition-colors"
               >
                 <MapPin size={18} className="text-renaissance-secondary" />
-                <span className="text-gray-300">120 All. des Platanes, 42114 Machézal</span>
+                <span className="text-gray-300">Le Bourg, 42114 Machézal</span>
               </a>
               <a 
                 href="tel:0477626098" 
