@@ -1,8 +1,8 @@
-import { useState } from 'react';
+
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { toast } from 'sonner';
 import Layout from '@/components/layout/Layout';
-import PageHeader from '@/components/common/PageHeader';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -67,7 +67,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg mb-1">Adresse</h4>
-                  <p className="text-renaissance-dark/80">Le Bourg</p>
+                  <p className="text-renaissance-dark/80">120 All. des Platanes</p>
                   <p className="text-renaissance-dark/80">42114 Machézal</p>
                   <p className="text-renaissance-dark/80">France</p>
                 </div>
