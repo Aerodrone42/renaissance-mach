@@ -1,72 +1,112 @@
-
+import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Beer, Wine, Music4 } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
-import PageHeader from '@/components/common/PageHeader';
-import ServiceHours from '@/components/common/ServiceHours';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-
-const barHours = [
-  { days: "Mardi - Jeudi", hours: "11h00 - 22h00" },
-  { days: "Vendredi - Samedi", hours: "11h00 - 00h00" },
-  { days: "Dimanche", hours: "11h00 - 20h00" },
-  { days: "Lundi", hours: "Fermé" }
-];
 
 const Bar = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Bar Le Renaissance Machézal | Bar Convivial & Animations</title>
-        <meta name="description" content="Bar chaleureux au cœur de Machézal, proposant une large sélection de boissons, vins locaux et animations régulières. L'endroit idéal pour se retrouver entre amis." />
-        <meta name="keywords" content="bar Machézal, animations soirée, vins locaux, bières pression, Le Renaissance, bar Loire" />
-        <meta property="og:title" content="Bar Le Renaissance Machézal | Lieu de Convivialité" />
-        <meta property="og:description" content="Découvrez notre bar convivial à Machézal : large sélection de boissons, vins locaux, animations et soirées à thème dans une ambiance chaleureuse." />
-        <meta property="og:type" content="bar" />
+        <title>Bar | Le Renaissance - Machézal</title>
+        <meta name="description" content="Découvrez notre bar chaleureux au cœur de Machézal" />
       </Helmet>
       
-      <PageHeader 
-        title="Notre Bar" 
-        description="Un espace convivial et chaleureux pour partager des moments agréables. Large sélection de boissons, vins locaux et animations régulières pour tous les goûts."
-        image="/lovable-uploads/0e7083ee-ce9e-418e-930e-d5f63bbfcb20.png"
-      />
+      <div className="page-header">
+        <div className="renaissance-container relative z-10">
+          <h1 className="text-4xl md:text-5xl font-bold text-white text-center">
+            Notre Bar
+          </h1>
+        </div>
+        <img 
+          src="/lovable-uploads/bar-header.jpg" 
+          alt="Bar Le Renaissance" 
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      </div>
       
-      <div className="renaissance-container py-16">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-12">
-          <Card>
-            <CardHeader className="text-center">
-              <Beer className="w-8 h-8 mx-auto text-renaissance-primary" />
-              <CardTitle className="mt-3">Bières & Pressions</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p>Une sélection de bières locales et internationales, en bouteille ou à la pression.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader className="text-center">
-              <Wine className="w-8 h-8 mx-auto text-renaissance-primary" />
-              <CardTitle className="mt-3">Carte des Vins</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p>Découvrez notre cave et nos vins sélectionnés avec soin auprès de vignerons passionnés.</p>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader className="text-center">
-              <Music4 className="w-8 h-8 mx-auto text-renaissance-primary" />
-              <CardTitle className="mt-3">Animations</CardTitle>
-            </CardHeader>
-            <CardContent className="text-center">
-              <p>Soirées à thème et animations musicales régulières dans une ambiance conviviale.</p>
-            </CardContent>
-          </Card>
+      <div className="renaissance-container py-12">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="section-title">Un lieu de convivialité</h2>
+          <p className="mb-6">
+            Le bar du Renaissance est un lieu de rencontre et de partage pour les habitants de Machézal et des environs. 
+            Dans une ambiance chaleureuse et authentique, venez profiter d'un moment de détente autour d'un verre.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
+            <img 
+              src="/lovable-uploads/bar-interior.jpg" 
+              alt="Intérieur du bar" 
+              className="rounded-lg shadow-md h-64 w-full object-cover"
+            />
+            <div>
+              <h3 className="text-2xl font-bold text-renaissance-primary mb-4">Nos boissons</h3>
+              <ul className="space-y-2">
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-renaissance-secondary rounded-full mr-2"></span>
+                  <span>Bières locales et artisanales</span>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-renaissance-secondary rounded-full mr-2"></span>
+                  <span>Vins de la région</span>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-renaissance-secondary rounded-full mr-2"></span>
+                  <span>Cocktails et spiritueux</span>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-renaissance-secondary rounded-full mr-2"></span>
+                  <span>Boissons chaudes</span>
+                </li>
+                <li className="flex items-center">
+                  <span className="w-2 h-2 bg-renaissance-secondary rounded-full mr-2"></span>
+                  <span>Jus de fruits et sodas</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <h3 className="text-2xl font-bold text-renaissance-primary mb-4">Animations et événements</h3>
+          <p className="mb-6">
+            Tout au long de l'année, nous organisons diverses animations pour faire vivre notre village :
+          </p>
+          <ul className="space-y-2 mb-8">
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-renaissance-secondary rounded-full mr-2 mt-2"></span>
+              <span>Soirées à thème</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-renaissance-secondary rounded-full mr-2 mt-2"></span>
+              <span>Retransmissions sportives</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-renaissance-secondary rounded-full mr-2 mt-2"></span>
+              <span>Jeux de société</span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-2 h-2 bg-renaissance-secondary rounded-full mr-2 mt-2"></span>
+              <span>Concerts et animations musicales</span>
+            </li>
+          </ul>
+          
+          <div className="bg-renaissance-light p-6 rounded-lg border border-renaissance-secondary/30 shadow-sm">
+            <h3 className="text-xl font-bold text-renaissance-primary mb-2">Informations pratiques</h3>
+            <p>
+              Notre bar est ouvert tous les jours de la semaine. Consultez nos horaires pour planifier votre visite.
+              Pour les groupes ou événements spéciaux, n'hésitez pas à nous contacter.
+            </p>
+          </div>
         </div>
-
-        <div className="max-w-xl mx-auto">
-          <ServiceHours hours={barHours} />
-        </div>
+      </div>
+      
+      {/* New footer credit */}
+      <div className="text-center text-sm text-gray-500 mt-8 pb-4">
+        Créé par <a 
+          href="https://www.site-internet-sans-abonnement.fr/" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="underline hover:text-renaissance-primary transition-colors"
+        >
+          Aerodrone Multiservice
+        </a>
       </div>
     </Layout>
   );
