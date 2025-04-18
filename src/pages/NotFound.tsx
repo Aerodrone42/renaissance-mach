@@ -5,7 +5,7 @@ import NotFoundContent from '@/components/404/NotFoundContent';
 
 const NotFound = () => {
   return (
-    <Layout>
+    <Layout showErrorToast={true}>
       <Helmet>
         <title>Page non trouvée | Le Renaissance - Machézal</title>
         <meta name="description" content="La page que vous recherchez n'existe pas ou a été déplacée." />

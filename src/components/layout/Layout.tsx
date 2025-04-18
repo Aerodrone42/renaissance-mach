@@ -1,20 +1,32 @@
 
 import { ReactNode, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { toast } from 'sonner';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
 interface LayoutProps {
   children: ReactNode;
+  showErrorToast?: boolean;
 }
 
-export default function Layout({ children }: LayoutProps) {
+export default function Layout({ children, showErrorToast }: LayoutProps) {
   const location = useLocation();
 
   // Scroll to top on route change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  // Show error toast if needed
+  useEffect(() => {
+    if (showErrorToast) {
+      toast.error("Page non trouvée", {
+        description: "La page que vous recherchez n'existe pas ou a été déplacée.",
+        position: "top-center",
+      });
+    }
+  }, [showErrorToast]);
 
   return (
     <div className="flex flex-col min-h-screen">
