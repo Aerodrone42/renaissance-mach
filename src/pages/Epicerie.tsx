@@ -1,6 +1,6 @@
 
 import { Helmet } from 'react-helmet-async';
-import { ShoppingBasket, Apple, Bread } from 'lucide-react';
+import { ShoppingBasket, Store, ShoppingBag } from 'lucide-react';
 import Layout from '@/components/layout/Layout';
 import PageHeader from '@/components/common/PageHeader';
 import ServiceHours from '@/components/common/ServiceHours';
@@ -34,27 +34,27 @@ const Epicerie = () => {
               <CardTitle className="mt-3">Produits Essentiels</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p>Tous les produits de première nécessité pour votre quotidien à Machézal.</p>
+              <p>Tous les produits de première nécessité pour votre quotidien à Machézal : épicerie, produits frais, boissons et articles ménagers.</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader className="text-center">
-              <Apple className="w-8 h-8 mx-auto text-renaissance-primary" />
+              <Store className="w-8 h-8 mx-auto text-renaissance-primary" />
               <CardTitle className="mt-3">Produits Locaux</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p>Un large choix de produits frais et locaux, en direct des producteurs de la région.</p>
+              <p>Un large choix de produits frais et locaux, en direct des producteurs de la région. Fruits, légumes, fromages et spécialités régionales.</p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader className="text-center">
-              <Bread className="w-8 h-8 mx-auto text-renaissance-primary" />
-              <CardTitle className="mt-3">Pain Frais</CardTitle>
+              <ShoppingBag className="w-8 h-8 mx-auto text-renaissance-primary" />
+              <CardTitle className="mt-3">Dépôt de Pain</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p>Dépôt de pain et viennoiseries fraîches tous les jours d'ouverture.</p>
+              <p>Pain frais et viennoiseries disponibles tous les jours d'ouverture. Possibilité de commander pour vos événements.</p>
             </CardContent>
           </Card>
         </div>
