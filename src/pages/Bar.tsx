@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import Layout from '@/components/layout/Layout';
@@ -33,7 +34,7 @@ const Bar = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
             <img 
-              src="/lovable-uploads/bar-interior.jpg" 
+              src="/lovable-uploads/7faed9fc-cc5e-4dc4-a7c2-c11b8f6d1f08.png" 
               alt="Intérieur du bar" 
               className="rounded-lg shadow-md h-64 w-full object-cover"
             />
