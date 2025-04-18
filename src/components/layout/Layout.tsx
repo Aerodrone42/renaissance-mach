@@ -18,15 +18,20 @@ export default function Layout({ children, showErrorToast }: LayoutProps) {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-  // Show error toast if needed
+  // Show error toast if needed - only run once when component mounts
   useEffect(() => {
     if (showErrorToast) {
-      toast.error("Page non trouvée", {
-        description: "La page que vous recherchez n'existe pas ou a été déplacée.",
-        position: "top-center",
-      });
+      // Short timeout to ensure Sonner is mounted before displaying toast
+      const timer = setTimeout(() => {
+        toast.error("Page non trouvée", {
+          description: "La page que vous recherchez n'existe pas ou a été déplacée.",
+          position: "top-center",
+        });
+      }, 100);
+      
+      return () => clearTimeout(timer);
     }
-  }, [showErrorToast]);
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
