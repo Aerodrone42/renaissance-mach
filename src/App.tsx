@@ -35,7 +35,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Toaster position="top-center" richColors />
+        <Toaster position="top-center" richColors closeButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
