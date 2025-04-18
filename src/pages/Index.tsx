@@ -1,13 +1,34 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import { toast } from 'sonner';
+import Layout from '@/components/layout/Layout';
+import Hero from '@/components/home/Hero';
+import About from '@/components/home/About';
+import Services from '@/components/home/Services';
+import Contact from '@/components/home/Contact';
 
 const Index = () => {
+  useEffect(() => {
+    // Show welcome toast when component mounts
+    toast.success('Bienvenue au Renaissance!', {
+      description: 'Découvrez notre bar, restaurant et épicerie au cœur de Machézal.',
+      position: 'top-center',
+    });
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <Layout>
+      <Helmet>
+        <title>Le Renaissance | Bar - Restaurant - Épicerie à Machézal</title>
+        <meta name="description" content="Le Renaissance - Bar, restaurant et épicerie de village à Machézal (42114). Un lieu chaleureux et convivial proposant une cuisine traditionnelle et des produits locaux." />
+      </Helmet>
+      
+      <Hero />
+      <About />
+      <Services />
+      <Contact />
+    </Layout>
   );
 };
 
