@@ -77,7 +77,17 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Le Renaissance. Tous droits réservés.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Le Renaissance. Tous droits réservés. {' '}
+            <a 
+              href="https://www.site-internet-sans-abonnement.fr/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="underline hover:text-renaissance-secondary transition-colors ml-2"
+            >
+              Créé par Aerodrone Multiservice
+            </a>
+          </p>
         </div>
       </div>
     </footer>
