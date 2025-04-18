@@ -17,13 +17,17 @@ const Bar = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Bar | Le Renaissance - Machézal</title>
-        <meta name="description" content="Le bar du Renaissance à Machézal vous accueille dans une ambiance conviviale. Découvrez notre sélection de boissons et cocktails." />
+        <title>Bar Le Renaissance Machézal | Bar Convivial & Animations</title>
+        <meta name="description" content="Bar chaleureux au cœur de Machézal, proposant une large sélection de boissons, vins locaux et animations régulières. L'endroit idéal pour se retrouver entre amis." />
+        <meta name="keywords" content="bar Machézal, animations soirée, vins locaux, bières pression, Le Renaissance, bar Loire" />
+        <meta property="og:title" content="Bar Le Renaissance Machézal | Lieu de Convivialité" />
+        <meta property="og:description" content="Découvrez notre bar convivial à Machézal : large sélection de boissons, vins locaux, animations et soirées à thème dans une ambiance chaleureuse." />
+        <meta property="og:type" content="bar" />
       </Helmet>
       
       <PageHeader 
         title="Notre Bar" 
-        description="Un lieu convivial pour se retrouver"
+        description="Un espace convivial et chaleureux pour partager des moments agréables. Large sélection de boissons, vins locaux et animations régulières pour tous les goûts."
         image="/lovable-uploads/0e7083ee-ce9e-418e-930e-d5f63bbfcb20.png"
       />
       

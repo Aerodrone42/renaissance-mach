@@ -17,13 +17,17 @@ const Restaurant = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Restaurant | Le Renaissance - Machézal</title>
-        <meta name="description" content="Découvrez notre restaurant au Renaissance à Machézal. Cuisine traditionnelle avec des produits frais et locaux." />
+        <title>Restaurant Le Renaissance à Machézal | Cuisine Traditionnelle Locale</title>
+        <meta name="description" content="Découvrez notre restaurant traditionnel au cœur de Machézal. Menu du jour à 15€, cuisine maison, produits locaux et frais. Réservation conseillée pour les groupes." />
+        <meta name="keywords" content="restaurant Machézal, cuisine traditionnelle, menu du jour, produits locaux, Le Renaissance, restaurant Loire" />
+        <meta property="og:title" content="Restaurant Le Renaissance à Machézal | Cuisine Traditionnelle" />
+        <meta property="og:description" content="Restaurant traditionnel proposant une cuisine maison avec des produits locaux. Menu du jour à 15€ et carte variée dans une ambiance chaleureuse." />
+        <meta property="og:type" content="restaurant" />
       </Helmet>
       
       <PageHeader 
         title="Notre Restaurant" 
-        description="Une cuisine traditionnelle et gourmande"
+        description="Une cuisine traditionnelle et authentique, élaborée avec des produits frais et locaux. Notre chef vous propose une carte variée et un menu du jour qui change quotidiennement."
         image="/lovable-uploads/e2cd6eb9-afd4-46b6-a981-507795eca30d.png"
       />
       

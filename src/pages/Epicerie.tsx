@@ -20,13 +20,17 @@ const Epicerie = () => {
   return (
     <Layout>
       <Helmet>
-        <title>Épicerie | Le Renaissance - Machézal</title>
-        <meta name="description" content="L'épicerie du Renaissance à Machézal propose des produits de première nécessité et des spécialités locales. Découvrez notre sélection." />
+        <title>Épicerie Le Renaissance Machézal | Produits Locaux & Dépôt de Pain</title>
+        <meta name="description" content="Épicerie de proximité à Machézal : produits frais, locaux et essentiels du quotidien. Dépôt de pain, fruits et légumes de saison, produits régionaux." />
+        <meta name="keywords" content="épicerie Machézal, produits locaux, dépôt de pain, épicerie proximité, Le Renaissance, commerce Loire" />
+        <meta property="og:title" content="Épicerie Le Renaissance Machézal | Votre Commerce de Proximité" />
+        <meta property="og:description" content="Votre épicerie de proximité à Machézal : produits frais et locaux, dépôt de pain quotidien, et tout le nécessaire pour votre quotidien." />
+        <meta property="og:type" content="store" />
       </Helmet>
       
       <PageHeader 
         title="Notre Épicerie" 
-        description="Produits locaux et essentiels du quotidien"
+        description="Votre épicerie de proximité proposant une large gamme de produits frais, locaux et essentiels. Dépôt de pain quotidien et spécialités régionales."
         image="/lovable-uploads/f3ff6e93-33ce-4134-ab28-99805ea36604.png"
       />
       
