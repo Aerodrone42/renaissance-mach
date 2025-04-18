@@ -1,3 +1,4 @@
+
 import { MapPin, Phone, Clock } from 'lucide-react';
 
 export default function ContactSection() {
@@ -62,7 +63,7 @@ export default function ContactSection() {
           
           <div className="h-[400px] rounded-lg overflow-hidden shadow-lg">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.537232216885!2d4.292532076226454!3d45.82799997108186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4097fee270d8b%3A0x9731da2bb3f2f469!2s42114%20Mach%C3%A9zal!5e0!3m2!1sfr!2sfr!4v1713383598341!5m2!1sfr!2sfr"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431!2d4.293214!3d45.8277698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4097fee270d8b%3A0x428eca7913b57a76!2sLe%20Renaissance!5e0!3m2!1sfr!2sfr!4v1713475246190!5m2!1sfr!2sfr"
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
