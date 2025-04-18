@@ -1,4 +1,3 @@
-
 import { MapPin, Phone, Clock } from 'lucide-react';
 
 export default function ContactSection() {
@@ -17,7 +16,7 @@ export default function ContactSection() {
                 <MapPin size={20} className="text-renaissance-primary mt-1" />
                 <div>
                   <h4 className="font-medium">Adresse</h4>
-                  <p className="text-renaissance-dark/80">Le Bourg, 42114 Machézal, France</p>
+                  <p className="text-renaissance-dark/80">120 All. des Platanes, 42114 Machézal, France</p>
                 </div>
               </div>
               

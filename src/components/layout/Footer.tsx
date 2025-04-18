@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Phone, Clock, MapPin, Mail, Facebook, Instagram } from 'lucide-react';
 
@@ -50,7 +49,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center justify-center md:justify-start gap-2">
                 <MapPin size={18} className="text-renaissance-secondary" />
-                <span className="text-gray-300">Le Bourg, 42114 Machézal</span>
+                <span className="text-gray-300">120 All. des Platanes, 42114 Machézal</span>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2">
                 <Phone size={18} className="text-renaissance-secondary" />
