@@ -1,3 +1,4 @@
+
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -12,6 +13,7 @@ import Epicerie from "./pages/Epicerie";
 import Localites from "./pages/Localites";
 import LocalitePage from "./pages/LocalitePage";
 import Contact from "./pages/Contact";
+import Merci from "./pages/Merci";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +36,7 @@ const App = () => (
             <Route path="/localites" element={<Localites />} />
             <Route path="/localites/:slug" element={<LocalitePage />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/merci" element={<Merci />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Toaster position="top-center" richColors closeButton duration={6000} />
