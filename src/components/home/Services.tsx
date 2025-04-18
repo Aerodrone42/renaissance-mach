@@ -6,7 +6,7 @@ import { ChevronRight } from 'lucide-react';
 const services = [
   {
     title: "Restaurant",
-    image: "/lovable-uploads/e2cd6eb9-afd4-46b6-a981-507795eca30d.png",
+    image: "/lovable-uploads/ea33052e-2a41-451f-90dc-3883f8b6debd.png", // Updated restaurant image
     description: "Découvrez notre cuisine traditionnelle préparée avec soin et passion.",
     link: "/restaurant"
   },
