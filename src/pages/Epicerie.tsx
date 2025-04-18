@@ -27,7 +27,7 @@ const Epicerie = () => {
       <PageHeader 
         title="Notre Épicerie" 
         description="Produits locaux et essentiels du quotidien"
-        image="/lovable-uploads/57cfeb3f-a073-4017-a068-63c353479ff4.png"
+        image="/lovable-uploads/f3ff6e93-33ce-4134-ab28-99805ea36604.png"
       />
       
       <div className="renaissance-container py-16">
