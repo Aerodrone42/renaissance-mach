@@ -2,33 +2,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://le-renaissance.lovable.app/</loc>
+    <loc>https://www.le-renaissance-machezal.fr/</loc>
     <lastmod>2024-03-18</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://le-renaissance.lovable.app/restaurant</loc>
+    <loc>https://www.le-renaissance-machezal.fr/restaurant</loc>
     <lastmod>2024-03-18</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://le-renaissance.lovable.app/bar</loc>
+    <loc>https://www.le-renaissance-machezal.fr/bar</loc>
     <lastmod>2024-03-18</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://le-renaissance.lovable.app/epicerie</loc>
+    <loc>https://www.le-renaissance-machezal.fr/epicerie</loc>
     <lastmod>2024-03-18</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://le-renaissance.lovable.app/localites</loc>
+    <loc>https://www.le-renaissance-machezal.fr/localites</loc>
     <lastmod>2024-03-18</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://le-renaissance.lovable.app/contact</loc>
+    <loc>https://www.le-renaissance-machezal.fr/contact</loc>
     <lastmod>2024-03-18</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
+
