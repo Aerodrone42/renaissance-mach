@@ -1,4 +1,3 @@
-
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
@@ -10,31 +9,155 @@ const localities = [
     name: "Chirassimont",
     distance: "5 km",
     description: "Petit village pittoresque à proximité de Machézal.",
-    slug: "chirassimont"
+    slug: "chirassimont",
+    attractions: [
+      "Église du XIXème siècle",
+      "Sentiers de randonnée",
+      "Vue panoramique sur les monts du Lyonnais"
+    ]
   },
   {
     name: "Saint-Just-la-Pendue",
     distance: "7 km",
     description: "Commune voisine connue pour son patrimoine historique.",
-    slug: "saint-just-la-pendue"
+    slug: "saint-just-la-pendue",
+    attractions: [
+      "Église gothique remarquable",
+      "Marché hebdomadaire",
+      "Fête patronale traditionnelle"
+    ]
   },
   {
     name: "Neulise",
     distance: "10 km",
     description: "Village dynamique avec diverses activités culturelles.",
-    slug: "neulise"
+    slug: "neulise",
+    attractions: [
+      "Plan d'eau aménagé",
+      "Centre culturel",
+      "Commerces de proximité"
+    ]
   },
   {
     name: "Sainte-Colombe-sur-Gand",
     distance: "12 km",
     description: "Charmante localité avec un cadre naturel préservé.",
-    slug: "sainte-colombe-sur-gand"
+    slug: "sainte-colombe-sur-gand",
+    attractions: [
+      "Bords de la rivière Gand",
+      "Ancien moulin restauré",
+      "Chapelle historique"
+    ]
   },
   {
     name: "Violay",
     distance: "15 km",
     description: "Village perché offrant des panoramas exceptionnels.",
-    slug: "violay"
+    slug: "violay",
+    attractions: [
+      "Mont Boussuivre",
+      "Forêt de Violay",
+      "Fête de la cerise"
+    ]
+  },
+  {
+    name: "Croizet-sur-Gand",
+    distance: "8 km",
+    description: "Village paisible traversé par la rivière Gand.",
+    slug: "croizet-sur-gand",
+    attractions: [
+      "Pont historique sur le Gand",
+      "Chemins de randonnée",
+      "Ancienne école restaurée"
+    ]
+  },
+  {
+    name: "Saint-Cyr-de-Valorges",
+    distance: "11 km",
+    description: "Commune rurale au cœur des monts du Beaujolais.",
+    slug: "saint-cyr-de-valorges",
+    attractions: [
+      "Église Saint-Cyr",
+      "Point de vue panoramique",
+      "Fermes traditionnelles"
+    ]
+  },
+  {
+    name: "Lay",
+    distance: "13 km",
+    description: "Village historique aux portes du Beaujolais.",
+    slug: "lay",
+    attractions: [
+      "Château médiéval",
+      "Vignobles locaux",
+      "Place du village animée"
+    ]
+  },
+  {
+    name: "Saint-Symphorien-de-Lay",
+    distance: "14 km",
+    description: "Bourg dynamique et commerçant.",
+    slug: "saint-symphorien-de-lay",
+    attractions: [
+      "Église romane",
+      "Marché traditionnel",
+      "Commerces et restaurants"
+    ]
+  },
+  {
+    name: "Saint-Marcel-de-Félines",
+    distance: "16 km",
+    description: "Village médiéval avec son château remarquable.",
+    slug: "saint-marcel-de-felines",
+    attractions: [
+      "Château de Saint-Marcel",
+      "Jardin médiéval",
+      "Festivités médiévales"
+    ]
+  },
+  {
+    name: "Bussières",
+    distance: "17 km",
+    description: "Village typique des monts du Lyonnais.",
+    slug: "bussieres",
+    attractions: [
+      "Église Saint-Pierre",
+      "Ancien couvent",
+      "Sentiers pédestres balisés"
+    ]
+  },
+  {
+    name: "Néronde",
+    distance: "18 km",
+    description: "Cité médiévale riche en histoire.",
+    slug: "neronde",
+    attractions: [
+      "Tours médiévales",
+      "Place du marché historique",
+      "Maisons Renaissance"
+    ]
+  },
+  {
+    name: "Pradines",
+    distance: "19 km",
+    description: "Village viticole avec vue sur la plaine du Forez.",
+    slug: "pradines",
+    attractions: [
+      "Domaines viticoles",
+      "Point de vue sur la plaine",
+      "Église du XIXe siècle"
+    ]
+  },
+  {
+    name: "Vendranges",
+    distance: "20 km",
+    description: "Petit village authentique de la Loire.",
+    slug: "vendranges",
+    attractions: [
+      "Chapelle historique",
+      "Lavoir restauré",
+      "Chemin des écoliers"
+    ]
   }
 ];
 
