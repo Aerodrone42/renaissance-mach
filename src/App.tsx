@@ -24,7 +24,6 @@ const App = () => (
       <meta name="theme-color" content="#C1432A" />
     </Helmet>
     <TooltipProvider>
-      <Toaster position="top-center" />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
@@ -36,6 +35,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Toaster position="top-center" richColors />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
