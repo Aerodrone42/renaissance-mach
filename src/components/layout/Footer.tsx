@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Clock, MapPin, Mail, Facebook, Instagram } from 'lucide-react';
+import OpeningHours from '../common/OpeningHours';
 
 export default function Footer() {
   return (
@@ -59,13 +60,9 @@ export default function Footer() {
                 <Mail size={18} className="text-renaissance-secondary" />
                 <span className="text-gray-300">contact@lerenaissance.fr</span>
               </div>
-              <div className="flex items-center justify-center md:justify-start gap-2">
-                <Clock size={18} className="text-renaissance-secondary" />
-                <span className="text-gray-300">Mardi au Dimanche: 8h - 22h</span>
-              </div>
+              <OpeningHours />
             </div>
           </div>
-        </div>
 
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-sm text-gray-400">
           <p>&copy; {new Date().getFullYear()} Le Renaissance. Tous droits réservés.</p>
