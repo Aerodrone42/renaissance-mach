@@ -8,7 +8,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Calendar } from "lucide-react";
+import { Calendar, Phone } from "lucide-react";
 
 export default function EventPopup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +21,10 @@ export default function EventPopup() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const handleReserve = () => {
+    window.open('tel:0477626098', '_self');
+  };
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -62,9 +66,10 @@ export default function EventPopup() {
               Fermer
             </Button>
             <Button
-              onClick={() => window.location.href = '/contact'}
-              className="bg-renaissance-primary hover:bg-renaissance-accent"
+              onClick={handleReserve}
+              className="bg-renaissance-primary hover:bg-renaissance-accent flex items-center gap-2"
             >
+              <Phone className="h-4 w-4" />
               Réserver
             </Button>
           </div>
