@@ -22,13 +22,19 @@ export default function Footer() {
               Un lieu convivial où se retrouvent les habitants et visiteurs depuis de nombreuses années.
             </p>
             <div className="flex mt-4 space-x-4">
-              <a href="https://facebook.com" className="text-gray-400 hover:text-renaissance-secondary transition-colors" aria-label="Facebook">
-                <Facebook size={20} />
-              </a>
-              <a href="https://instagram.com" className="text-gray-400 hover:text-renaissance-secondary transition-colors" aria-label="Instagram">
-                <Instagram size={20} />
-              </a>
-            </div>
+              <a 
+            href="https://www.facebook.com/estefanio.dasilva.733" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-renaissance-secondary transition-colors" 
+            aria-label="Facebook"
+          >
+            <Facebook size={20} />
+          </a>
+          <a href="https://instagram.com" className="text-gray-400 hover:text-renaissance-secondary transition-colors" aria-label="Instagram">
+            <Instagram size={20} />
+          </a>
+        </div>
           </div>
 
           {/* Navigation Links */}
