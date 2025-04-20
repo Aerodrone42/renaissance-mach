@@ -127,7 +127,7 @@ const Contact = () => {
             </p>
             
             <form 
-              action="https://formsubmit.co/contact@le-renaissance-machezal.fr" 
+              action="https://formsubmit.co/steph.mauricio42000@domaine.com" 
               method="POST"
               className="space-y-6"
             >

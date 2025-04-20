@@ -64,12 +64,13 @@ export default function Footer() {
                 <Phone size={18} className="text-renaissance-secondary" />
                 <span className="text-gray-300">04 77 62 60 98</span>
               </a>
+              
               <a 
-                href="mailto:contact@lerenaissance.fr"
+                href="mailto:steph.mauricio42000@domaine.com"
                 className="flex items-center justify-center md:justify-start gap-2 hover:text-renaissance-secondary transition-colors"
               >
                 <Mail size={18} className="text-renaissance-secondary" />
-                <span className="text-gray-300">contact@lerenaissance.fr</span>
+                <span className="text-gray-300">steph.mauricio42000@domaine.com</span>
               </a>
               <OpeningHours />
             </div>
