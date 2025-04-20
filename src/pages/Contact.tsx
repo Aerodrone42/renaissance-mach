@@ -88,7 +88,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg mb-1">Email</h4>
-                  <p className="text-renaissance-dark/80">steph.mauricio42000@domaine.com</p>
+                  <p className="text-renaissance-dark/80">steph.mauricio42000@gmail.com</p>
                 </div>
               </div>
               
@@ -127,7 +127,7 @@ const Contact = () => {
             </p>
             
             <form 
-              action="https://formsubmit.co/steph.mauricio42000@domaine.com" 
+              action="https://formsubmit.co/steph.mauricio42000@gmail.com" 
               method="POST"
               className="space-y-6"
             >
