@@ -14,4 +14,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://www.le-renaissance-machezal.fr/sitemap.xml
+Sitemap: https://le-renaissance-machezal.fr/sitemap.xml
