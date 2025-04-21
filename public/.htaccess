@@ -1,13 +1,26 @@
 
+# Activation du module de réécriture
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^index\.html$ - [L]
+  
+  # Ne pas appliquer de règle aux fichiers existants
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /index.html [L]
+  
+  # Rediriger toutes les requêtes vers index.html
+  RewriteRule ^(.*)$ /index.html [L]
 </IfModule>
+
+# Désactivation du cache pour l'index.html
+<Files index.html>
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </IfModule>
+</Files>
 
 # Activation de la compression GZIP
 <IfModule mod_deflate.c>
