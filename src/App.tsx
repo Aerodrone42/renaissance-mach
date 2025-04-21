@@ -28,7 +28,7 @@ const App = () => (
         <meta name="robots" content="index, follow" />
       </Helmet>
       <TooltipProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/">
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/restaurant" element={<Restaurant />} />
