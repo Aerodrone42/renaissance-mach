@@ -1,19 +1,19 @@
 
-# Activation du module de réécriture
+# Enable rewrite engine
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
   
-  # Ne pas appliquer de règle aux fichiers existants
+  # Exclude actual files and directories
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
   
-  # Rediriger toutes les requêtes vers index.html
-  RewriteRule ^(.*)$ /index.html [L]
+  # Redirect all requests to index.html
+  RewriteRule ^(.*)$ /index.html [QSA,L]
 </IfModule>
 
-# Désactivation du cache pour l'index.html
+# Disable cache for index.html
 <Files index.html>
   <IfModule mod_headers.c>
     Header set Cache-Control "no-cache, no-store, must-revalidate"
@@ -22,7 +22,7 @@
   </IfModule>
 </Files>
 
-# Activation de la compression GZIP
+# Enable GZIP compression
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/plain
   AddOutputFilterByType DEFLATE text/html
@@ -35,7 +35,7 @@
   AddOutputFilterByType DEFLATE application/x-javascript
 </IfModule>
 
-# Mise en cache des fichiers statiques
+# Cache static files
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/jpg "access plus 1 year"
