@@ -24,23 +24,10 @@ const Contact = () => {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success('Message envoyé!', {
-        description: 'Nous vous répondrons dans les plus brefs délais.',
-      });
-      
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      
-      setIsSubmitting(false);
-    }, 1000);
+    // This is now handled by FormSubmit
+    toast.success('Message envoyé!', {
+      description: 'Nous vous répondrons dans les plus brefs délais.',
+    });
   };
 
   return (
@@ -135,6 +122,7 @@ const Contact = () => {
               action="https://formsubmit.co/steph.mauricio42000@gmail.com" 
               method="POST"
               className="space-y-6"
+              onSubmit={handleSubmit}
             >
               {/* Champs cachés pour FormSubmit */}
               <input type="hidden" name="_next" value="https://www.le-renaissance-machezal.fr/merci" />
@@ -152,6 +140,8 @@ const Contact = () => {
                     required
                     className="w-full"
                     placeholder="Votre nom"
+                    value={formData.name}
+                    onChange={handleChange}
                   />
                 </div>
                 
@@ -166,6 +156,8 @@ const Contact = () => {
                     required
                     className="w-full"
                     placeholder="votre@email.com"
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
                 
@@ -179,6 +171,8 @@ const Contact = () => {
                     required
                     className="w-full"
                     placeholder="Le sujet de votre message"
+                    value={formData.subject}
+                    onChange={handleChange}
                   />
                 </div>
                 
@@ -192,6 +186,8 @@ const Contact = () => {
                     required
                     className="w-full min-h-[150px]"
                     placeholder="Votre message..."
+                    value={formData.message}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
