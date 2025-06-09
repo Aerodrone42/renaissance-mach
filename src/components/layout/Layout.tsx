@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { toast } from 'sonner';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import FloatingCallButton from '@/components/common/FloatingCallButton';
 
 interface LayoutProps {
   children: ReactNode;
@@ -40,6 +41,7 @@ export default function Layout({ children, showErrorToast }: LayoutProps) {
         {children}
       </main>
       <Footer />
+      <FloatingCallButton />
     </div>
   );
 }

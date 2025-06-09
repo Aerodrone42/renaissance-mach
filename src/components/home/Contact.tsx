@@ -1,4 +1,3 @@
-
 import { MapPin, Phone, Clock } from 'lucide-react';
 
 export default function ContactSection() {
@@ -25,7 +24,7 @@ export default function ContactSection() {
                 <Phone size={20} className="text-renaissance-primary mt-1" />
                 <div>
                   <h4 className="font-medium">Téléphone</h4>
-                  <a href="tel:0477626098" className="text-renaissance-dark/80 hover:text-renaissance-primary transition-colors">04 77 62 60 98</a>
+                  <a href="tel:0986079939" className="text-renaissance-dark/80 hover:text-renaissance-primary transition-colors">09 86 07 99 39</a>
                 </div>
               </div>
               
