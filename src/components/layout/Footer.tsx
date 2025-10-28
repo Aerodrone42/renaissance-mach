@@ -64,11 +64,11 @@ export default function Footer() {
                 <span className="text-gray-300">Le Bourg, 42114 Machézal</span>
               </a>
               <a 
-                href="tel:0477626098" 
+                href="tel:0986079939" 
                 className="flex items-center justify-center md:justify-start gap-2 hover:text-renaissance-secondary transition-colors"
               >
                 <Phone size={18} className="text-renaissance-secondary" />
-                <span className="text-gray-300">04 77 62 60 98</span>
+                <span className="text-gray-300">09 86 07 99 39</span>
               </a>
               
               <a 

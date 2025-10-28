@@ -11,12 +11,12 @@ const OpeningHours = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const hours = [
-    { day: 'Lundi', hours: '17h - 20h' },
-    { day: 'Mardi', hours: '9h - 13h30, 17h - 20h' },
-    { day: 'Mercredi', hours: 'Fermé' },
-    { day: 'Jeudi', hours: '9h - 13h30, 17h - 22h' },
-    { day: 'Vendredi', hours: '9h - 13h30, 17h - 22h' },
-    { day: 'Samedi', hours: '10h - 13h30, 17h - 22h' },
+    { day: 'Lundi', hours: 'Fermé' },
+    { day: 'Mardi', hours: '9h - 14h, 18h - 20h' },
+    { day: 'Mercredi', hours: '9h - 14h, 18h - 20h' },
+    { day: 'Jeudi', hours: '9h - 14h, 18h - 22h' },
+    { day: 'Vendredi', hours: '9h - 14h, 18h - 22h' },
+    { day: 'Samedi', hours: '10h - 14h, 18h - 22h' },
     { day: 'Dimanche', hours: '9h - 14h' }
   ];
 
